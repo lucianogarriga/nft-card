@@ -8,7 +8,7 @@
 
 :root{
     --soft-blue: hsl(215, 51%, 70%);
-    --cyan: hsl(178, 100%, 50%);
+    --cyan: hsl(178, 100%, 50%, 0.5);
     --veryDarkBlueMain: hsl(217, 54%, 11%);
     --veryDarkBlueCard: hsl(216, 50%, 16%);
     --veryDarkBlueLine: hsl(215, 32%, 27%);
@@ -17,8 +17,7 @@
 
 body{
     font-family: 'Outfit', sans-serif;
-    background-color: var(--veryDarkBlueMain);
-    color: var(--white);
+    background-color: var(--veryDarkBlueMain); 
     font-size: 18px;
 }
 
@@ -30,7 +29,38 @@ body{
     border-radius: 1rem;
     padding: 26px;
 }
-
+.image{
+    background-image: url(./images/image-equilibrium.jpg);
+    width: 280px;
+    height: 280px;
+    background-size: cover;
+    border-radius: 8px;
+    margin-bottom: 26px;
+    overflow: hidden;
+    /* el contenido que sobresale quede dentro del div  */
+}
+.eye-image{
+    opacity: 0;
+    background-color: var(--cyan);
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+.eye-image:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+h1{
+    color: var(--white);
+    font-size: 1.3em;
+    margin-bottom: 18px;
+}
+h1:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
 
 
 
