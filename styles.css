@@ -61,7 +61,46 @@ h1:hover{
     color: var(--cyan);
     cursor: pointer;
 }
-
+.description{
+    font-size: 0.9em;
+    color: var(--soft-blue);
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.details-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+.value{
+    color: var(--cyan);
+}
+.time{
+    color: var(--soft-blue);
+}
+.line{
+    border-top: 1px solid var(--soft-blue);
+} 
+.creator-container{
+    display: flex;
+    align-items: center;
+}
+.photo{
+    background-image: url(./images/image-avatar.png);
+    width: 40px;
+    height: 40px;
+    /* Si sobresale de las dimensiones del div -- */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+.creator{
+    margin-top: 20px;
+    margin-left: 20px;
+}
 
 
 .attribution { 
