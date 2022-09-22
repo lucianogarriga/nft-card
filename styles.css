@@ -22,14 +22,15 @@ body{
 }
 
 .main-container{
-    border: 1px solid white;
-    width: 330px;
+    background-color: var(--veryDarkBlueCard);
+    width: 290px;
     height: 546px;
     margin: 60px auto;
     border-radius: 1rem;
     padding: 26px;
 }
 .image{
+    margin: 0 auto;
     background-image: url(./images/image-equilibrium.jpg);
     width: 280px;
     height: 280px;
@@ -57,10 +58,6 @@ h1{
     font-size: 1.3em;
     margin-bottom: 18px;
 }
-h1:hover{
-    color: var(--cyan);
-    cursor: pointer;
-}
 .description{
     font-size: 0.9em;
     color: var(--soft-blue);
@@ -81,10 +78,11 @@ h1:hover{
 }
 .line{
     border-top: 1px solid var(--soft-blue);
+    margin-bottom: 1rem;
 } 
 .creator-container{
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 .photo{
     background-image: url(./images/image-avatar.png);
@@ -92,17 +90,22 @@ h1:hover{
     height: 40px;
     /* Si sobresale de las dimensiones del div -- */
     background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 20px;
+    background-repeat: no-repeat; 
     border: 1px solid var(--white);
     border-radius: 50%;
 }
-.creator{
-    margin-top: 20px;
-    margin-left: 20px;
+.creator{ 
+    margin-left: 15px;
+    color: var(--soft-blue);
+    font-size: 0.9em; 
 }
-
-
+.creator span{
+    color: var(--white);
+}
+.title:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
 .attribution { 
     font-size: 11px; 
     text-align: center; 
