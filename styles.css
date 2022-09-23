@@ -114,3 +114,20 @@ h1{
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+@media (min-width: 900px){
+    .main-container{
+        width: 324px;
+        height: 600px;
+    }
+    .image{
+        width: 300px;
+        height: 300px;
+    }
+    .description{
+        font-size: 1em;
+    }
+    .creator-container{
+        margin-top: 35px;
+    } 
+}
